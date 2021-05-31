@@ -1,0 +1,9 @@
+2021-05-31 16:59:16.298 INFO [restartedMain]com.nbnfsoft.admin.AdminApplication.logStarting:55 -Starting AdminApplication on LAPTOP-RV71CQGU with PID 14880 (started by 11697 in E:\NF\健康评估\JavaBoilerplate2021\admin)
+2021-05-31 16:59:16.300 INFO [restartedMain]com.nbnfsoft.admin.AdminApplication.logStartupProfileInfo:655 -The following profiles are active: test
+2021-05-31 16:59:16.515 WARN [background-preinit]o.s.http.converter.json.Jackson2ObjectMapperBuilder.warn:127 -For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-05-31 16:59:21.553 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8061"]
+2021-05-31 16:59:21.554 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-05-31 16:59:21.554 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-05-31 16:59:21.850 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-05-31 16:59:31.120 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8061"]
+2021-05-31 16:59:31.178 INFO [restartedMain]com.nbnfsoft.admin.AdminApplication.logStarted:61 -Started AdminApplication in 16.151 seconds (JVM running for 18.357)

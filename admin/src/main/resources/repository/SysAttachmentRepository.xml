@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nbnfsoft.admin.repository.SysAttachmentRepository">
+    <insert id="saveSysAttachment" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        insert into NFSYS_ATTACHMENT (ID, FILE_NAME, FILE_PATH, THUMB_PATH,FILE_SUFFIX,FILE_SIZE)
+        VALUES
+        (NFSYS_ATTACHMENT_S.NEXTVAL,#{item.fileName,jdbcType=VARCHAR}
+        ,#{item.filePath,jdbcType=VARCHAR},#{item.thumbPath,jdbcType=VARCHAR}
+        ,#{item.fileSuffix,jdbcType=NUMERIC},#{item.fileSize,jdbcType=NUMERIC})
+    </insert>
+</mapper>

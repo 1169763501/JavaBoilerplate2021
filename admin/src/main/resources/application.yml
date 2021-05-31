@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    #切换测试or生产环境,默认测试环境
+    active: test
+  main:
+    allow-bean-definition-overriding: true
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/test/,classpath:/templates/
+  devtools:
+    restart.trigger-file: trigger.txt
+    restart.enabled: true
+  servlet:
+    multipart: #配置文件上传
+       max-file-size: 100MB #设置上传的单个文件最大值，单位可以是 MB、KB，默认为 1MB
+       max-request-size: 100MB #设置多文件上传时，单次内多个文件的总量的最大值，单位可以是 MB、KB，默认为 10 M
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  mapper-locations: classpath:repository/*.xml
+# token配置
+token:
+    # 令牌自定义标识
+    header: Authorization
+    # 令牌有效期（默认24小时）
+    expireTime: 1440
